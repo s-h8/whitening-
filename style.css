@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    margin:  0 auto;
+    padding: 0 5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+#header img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+}
+
+#header li {
+    margin-left: 30px;
+
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+    height: 60px;
+    align-items: center;
+}
+
+
+/* mainvisual */
+
+#mainvisual img {
+    width: 100%;
+}
+
+#mainvisual .fade{
+    position: relative;
+    height: calc(100vh - 60px);
+}
+#mainvisual .fade li {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fade 15s infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#mainvisual .fade li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#mainvisual .fade li:nth-child(1) p{
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+
+#mainvisual .fade li:nth-child(2) {
+    animation-delay: 5s;
+}
+
+#mainvisual .fade li:nth-child(3) {
+    animation-delay: 10s;
+}
+
+#mainvisual .fade li img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* reason */
+
+
+.section-title {
+    /* display: block; */
+    margin: 100px 0;
+    text-align: center;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.items li {
+    width: 32%;
+    text-align: center;
+    
+}
+
+.items img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+.items p {
+    font-size: 24px;
+}
+
+/* bg */
+
+.bg {
+    display: flex;
+    margin-top: 50px;
+}
+
+.img {
+    width: 100%;
+}
+
+.work {
+    display: flex;
+    margin-top: 50px;
+}
+
+/* summary */
+
+#summary .title2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.mb-2 img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.bg2 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.bg2--text {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* video */
+
+#video {
+    text-align: center;
+}
+
+/* text */
+
+.title--2 {
+    margin: 30px 0;
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+}
+
+#text .slider img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.text3 p {
+    margin-top: 30px;
+}
+
+/* footer */
+
+.item3 {
+    display: flex;
+}
